@@ -44,8 +44,8 @@ function display(data) {
         cartona += `<tr>
         <td>${i + 1}</td>
         <td>${data[i].name}</td>
-        <td><a class="btn btn-warning" href="http://${data[i].url}" target="_blank">Visit</a></td>
-        <td><button class="btn btn-danger delete" onclick="deleteSite(${i})">Delete</button></td>
+        <td><a class="btn btn-warning" href="http://${data[i].url}" target="_blank"> <i class="fa-solid fa-eye"></i> Visit</a></td>
+        <td><button class="btn btn-danger delete" onclick="deleteSite(${i})"> <i class="fa-solid fa-trash"></i> Delete</button></td>
         </tr>`
     }
     document.querySelector("#content").innerHTML=cartona;

@@ -19,12 +19,21 @@
 
   <section class="py-5">
     <div class="container">
-      <h1 class="mb-5 text-center">Bookmarks</h1>
+      <h1 class="mb-5 text-center">
+          <span style="--i:1">B</span>
+          <span style="--i:2">o</span>
+          <span style="--i:3">o</span>
+          <span style="--i:4">k</span>
+          <span style="--i:5">m</span>
+          <span style="--i:6">a</span>
+          <span style="--i:7">r</span>
+          <span style="--i:8">k</span>
+      </h1>
     <main class="py-4">
       <h2 class="text-center mb-4">
-        <i class="fa-solid fa-bookmark"></i>
+        <i class="fa-solid fa-bookmark text-success"></i>
         Bookmark Your Favorite Sites
-        <i class="fa-solid fa-bookmark"></i>
+        <i class="fa-solid fa-bookmark text-success"></i>
       </h2>
       <div class="site-name mb-3">
         <label for="siteName" class="my-2"><i class="fa-solid fa-book-bookmark me-2"></i> Site Name</label>
@@ -34,7 +43,7 @@
         <label for="siteUrl" class="my-2"><i class="fa-solid fa-globe me-2"></i> Site URL</label>
         <input id="siteUrl" oninput="validateUrl()" type="text" class="form-control" placeholder="Site URL">
       </div>
-      <button class="btn btn-danger px-5 d-block mx-auto submit">Submit</button>
+      <button class="btn btn-primary px-5 d-block mx-auto submit">Submit</button>
     </main>
     </div>
     
@@ -53,10 +62,9 @@
         </tbody>
       </table>
     </div>
-    
   </section>
   <section id="message" class="d-none justify-content-center align-items-center message">
-    <div class="body bg-white p-4 w-50 rounded-4">
+    <div class="body bg-white p-4 rounded-4">
       <div class="icons d-flex justify-content-between align-items-center mb-4">
         <div class="colors d-flex align-items-center">
           <div class="bg-danger rounded-circle"></div>

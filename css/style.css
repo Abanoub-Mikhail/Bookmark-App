@@ -1,66 +1,130 @@
-
 ::selection {
-   background-color: burlywood;
-   color: white;
+  background-color: rgb(255, 255, 255);
+  color: hsl(241.95deg 45.86% 8.22%);
 }
 
-
 body {
-   background-color: hsl(34, 61%, 92%);
+  background-color: hsl(241.95deg 45.86% 8.22%);
 }
 
 main {
-   border-top: 1px dotted black;
-   border-bottom: 1px dotted black;
+  border-top: 3px dotted rgb(255, 255, 255);
+  border-bottom: 3px dotted rgb(255, 255, 255);
 }
-
 
 
 h1 {
-   font-family: 'Pacifico', cursive;
-   font-size: 3.125rem;
+  font-family: "Pacifico", cursive;
+  position: relative;
+  font-size: 40px;
 }
-
+label {
+   color: rgb(0, 195, 255);
+}
 
 h2 {
-   color: tomato;
-   font-family: 'Righteous', sans-serif;
+  color: tomato;
+  font-family: "Righteous", sans-serif;
 }
+
+@media  screen and (max-width: 600px) {
+   h1 {
+      font-size: 1.5625rem;
+    }
+
+    h2 {
+      font-size: .9375rem;
+    }
+}
+
+
 
 .colors div {
-   width: 1.25rem;
-   height: 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
-/* section .body {
-
-} */
-
-
 .body .icons .close {
-   cursor: pointer;
-   color: orangered;
-   font-size: 1.5625rem;
+  cursor: pointer;
+  color: orangered;
+  font-size: 1.5625rem;
 }
 
 .message {
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.message .body {
+   width: 50%;
 }
 footer h3 {
-   font-size: 1.5625rem;
-   font-family:'Bree Serif', serif;
+  font-size: 1.5625rem;
+  font-family: "Bree Serif", serif;
 }
 
 footer p i {
-   color: red;
+  color: red;
 }
 
 footer p {
-   font-size: 1.25rem;
-   font-family: 'PT Sans Caption', sans-serif;
+  font-size: 1.25rem;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+   footer p {
+      font-size: .625rem;
+   }
+   footer h3 {
+      font-size: .9375rem;
+    }
+    .message .body {
+      width: 80%;
+   }
+   .site-name , .site-url {
+      text-align: center;
+   }
+   
+}
+
+@media  screen and (max-width: 992px) {
+   
+   .message .body{
+      width: 80%;
+   }
+   
+}
+
+
+/* animation */
+
+h1 span {
+  position: relative;
+  display: inline-block;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(28, 9, 121, 1) 30%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
 }
